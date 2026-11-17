@@ -38,7 +38,6 @@
 #
 
 
-
 # #tak_4
 # price_per_cup = float(input("Enter price per one cup: "))
 # budget = float(input("Enter your budget: "))
@@ -61,7 +60,6 @@
 # print(f"Total minutes:{total_minutes:.0f}, \nTotal hours:{hours:.0f}, \nMinutes:{rest_minutes:.0f}")
 
 
-
 # #task_6
 # apples = int(input("Enter quantity of apples: "))
 # milk = int(input("Enter quantity of milk (l): "))
@@ -77,5 +75,3 @@
 #
 # print(f"Remaining apples: {rest_apples}")
 # print(f"Remaining milk: {rest_milk:.2f}")
-
-

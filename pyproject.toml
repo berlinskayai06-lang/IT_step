@@ -11,7 +11,7 @@ requires-python = ">=3.10"
 [tool.ruff]
 
 # Максимальна довжина рядка коду
-line-length = 88
+line-length = 130
 
 # Версія Python, для якої перевіряється код
 target-version = "py312"
@@ -37,6 +37,6 @@ ignore = [
 # Налаштування Black — форматування коду
 [tool.black]
 # Максимальна довжина рядка коду
-line-length = 88
+line-length = 130
 # Версія Python, для якої виконується форматування
 target-version = ["py312"]

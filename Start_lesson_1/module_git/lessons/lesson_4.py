@@ -23,7 +23,7 @@
 # else:
 #     print("Access blocked!")
 
-#task_3
+# task_3
 # meters = float(input("Enter meters: "))
 # unit_of_meas = input("Enter transfer to (cm, km): ")
 
@@ -118,7 +118,6 @@
 #     print(number, "Number is multiple 7")
 # else:
 #     print(number, "Number is not multiple 7")
-
 
 
 # #extra_task3

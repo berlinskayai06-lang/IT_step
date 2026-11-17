@@ -1,4 +1,4 @@
-#task_1
+# task_1
 # Завдання 1
 # Щоб створити одну глиняну фігурку треба 130 грам
 # глини.
@@ -10,7 +10,8 @@
 #
 # #data
 # clay_per_figure = 130  #quantity for one figure
-# # clay*= 1000  #i think this line shouldn`t be here, for this meaning we have line "15"
+# # clay*= 1000
+# #i think this line shouldn`t be here, for this meaning we have line "15"
 #
 # clay = float(input("Введіть масу глини (кг): "))  #user have to enter total quantity
 #
@@ -21,7 +22,7 @@
 # print(f"Можна зробити: {figures} фігурок")  #shows result of counting
 
 
-#task_2
+# task_2
 # Троє друзів пішли на рибалку. Програма отримує
 # кількість риби яку зловив кожен рибалка.
 # Виведіть на екран:
@@ -36,8 +37,7 @@
 # print("The biggest catch:", max(first_fisher, second_fisher, third_fisher))
 
 
-
-#task_3
+# task_3
 # У кінотеатрі можна замовити квитки онлайн
 # Місце Ціна
 # Звичайне 150 грн
@@ -78,7 +78,7 @@
 # print("Banknotes 100:", banknotes_100)
 # print("Change:", money)
 
-#task_7 from practice work
+# task_7 from practice work
 # Користувач вводить суму вкладу в банк та відсоток
 # ставки.
 # ● Обчисліть скільки користувач отримує через 5 років,
@@ -109,5 +109,3 @@
 # print("Four years: ", deposit_year5)
 #
 # print(f"In 5 yaer your deposit will amount to: {deposit_year5: .2f}")
-
-

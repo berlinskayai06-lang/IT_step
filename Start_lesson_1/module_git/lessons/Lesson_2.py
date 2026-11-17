@@ -53,7 +53,7 @@
 # per_payment = total_amount / qnt
 # print("Personal payment:", per_payment)
 
-#task_8
+# task_8
 sum = float(input("Введіть суму грошей покупця: "))
 price = float(input("Введіть вартість товару: "))
 change = sum - price

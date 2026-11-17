@@ -1,4 +1,4 @@
-#task_1
+# task_1
 # 7 липня 2024 року українська спортсменка Ярослава
 # Магучіх встановила світовий рекорд по стрибках у висоту –
 # 2.10 метра
@@ -17,7 +17,7 @@
 # else:
 #     print(f"Congratulations! A new record {high} has been set!")
 
-#task_2
+# task_2
 # Користувач вводить сигнал світлофора(колір), потрібно
 # вивести на екран що робити. Розставте блоки коду у
 # правильному порядку(є 2 лишні блоки) та добавте
@@ -36,8 +36,10 @@
 #
 #
 #
-# if signal == "Можна йти":  # in this case signal and action mixed, that`s why i remove it
+# if signal == "Можна йти":
 #     print("зелений")
+# in this case signal and action mixed, that`s why i remove it
 #
-# if signal == "червоний":  # this one i remove because of wrong command to action: on red light you have to stop
+# if signal == "червоний":
 #     print("Приготуйтеся")
+# this one i remove because of wrong command to action: on red light you have to stop

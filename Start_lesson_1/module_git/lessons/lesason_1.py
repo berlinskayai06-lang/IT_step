@@ -1,5 +1,3 @@
-
-
 print("Iryna Dub motorbike riding")
 
 print("Iryna Dub\nmotorbike riding")
