@@ -74,3 +74,28 @@ while True:
 
     elif choice == "3":
         break
+
+
+
+while True:
+    print("1. Get a book")
+    print("2. Return a book")
+    print("3. Exit")
+
+    choice = input("Choose an option: ")
+
+    if choice == "1":
+        name = input("Enter your name: ")
+        book = input("Enter name of book: ")
+        days = int(input("For how many days: "))
+
+        print(f"The book {book} has been issued to {name} for {days} days")
+
+    elif choice == "2":
+        name = input("Enter your name: ")
+        book = input("Enter name of book: ")
+
+        print(f"The reader {name} returned the book {book}")
+
+    elif choice == "3":
+        break
