@@ -37,10 +37,10 @@
 
 
 while True:
-    print("1. Get the book")
+    print("1. Get a book")
     print("2. Exit")
 
-    choice = input("Choose the option: ")
+    choice = input("Choose an option: ")
 
     if choice == "1":
         name = input("Enter your name: ")
@@ -49,4 +49,28 @@ while True:
         print(f"The book {book} has been issued to {name}")
 
     elif choice == "2":
+        break
+
+
+
+while True:
+    print("1. Get a book")
+    print("2. Return a book")
+    print("3. Exit")
+
+    choice = input("Choose an option: ")
+
+    if choice == "1":
+        name = input("Enter your name: ")
+        book = input("Enter name of book: ")
+
+        print(f"The book {book} has been issued to {name}")
+
+    elif choice == "2":
+        name = input("Enter your name: ")
+        book = input("Enter name of book: ")
+
+        print(f"The reader {name} returned the book {book}")
+
+    elif choice == "3":
         break
