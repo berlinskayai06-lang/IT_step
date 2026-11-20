@@ -122,3 +122,47 @@ while True:
 
         elif choice == "2":
             print(f"The reader {name} returned the book {book}")
+
+
+
+
+while True:
+    print("1. Get a book")
+    print("2. Return a book")
+    print("3. Exit")
+
+    choice = input("Choose an option: ")
+
+    if choice == "3":
+        break
+
+    if choice == "1" or choice == "2":
+        name = input("Enter your name: ").strip()
+        book = input("Enter name of book: ").strip()
+
+        if name == "" or book == "":
+            print("Your name and name of book can not be empty!")
+            continue
+
+        if choice == "1":
+            try:
+                days = int(input("For how many days?: "))
+            except ValueError:
+                print("Enter an integer!")
+                continue
+
+            if days < 0:
+                print("The number of days cannot be negative!")
+                continue
+
+            if days > 30:
+                print("A book is issued for a maximum of 30 days!")
+                continue
+
+            print(f"The book {book} has been issued to {name} for {days} days")
+
+        elif choice == "2":
+            print(f"The reader {name} returned the book {book}")
+
+    else:
+        print("Invalid menu option!")
