@@ -162,3 +162,103 @@ while True:
 
     else:
         print("Invalid option! Please try again.")
+
+
+
+
+PIZZAS = {
+    "Margherita": 150,
+    "Pepperoni": 180,
+    "Four Cheese": 200,
+}
+
+MAX_PIZZAS = 15
+
+
+def show_menu():
+    print("\n===== PIZZA MENU =====")
+    print("1. Order pizza")
+    print("2. Exit")
+    print("3. Show complete order")
+
+
+def show_pizzas():
+    print("\nAvailable pizzas:")
+
+    for name, price in PIZZAS.items():
+        print(f"{name} - {price} UAH")
+
+
+def add_pizza(orders):
+    show_pizzas()
+
+    pizza_name = input("Enter pizza name: ").strip()
+
+    if pizza_name not in PIZZAS:
+        print("Pizza not found! Please choose from the menu.")
+        return
+
+    try:
+        quantity = int(input("Enter quantity: "))
+    except ValueError:
+        print("Invalid quantity! Please enter a whole number.")
+        return
+
+    if quantity <= 0:
+        print("Quantity must be greater than zero!")
+        return
+
+    total_quantity = sum(orders.values())
+
+    if total_quantity + quantity > MAX_PIZZAS:
+        print("Error! Maximum 15 pizzas per order.")
+        print(f"You can order {MAX_PIZZAS - total_quantity} more pizzas.")
+        return
+
+    orders[pizza_name] = orders.get(pizza_name, 0) + quantity
+
+    print(f"Ordered {pizza_name}, {quantity} pcs")
+
+
+def show_order(orders):
+    print("\n========== YOUR ORDER ==========")
+    print(f"{'Pizza':<16} {'Quantity':<10} Cost")
+    print("--------------------------------")
+
+    total_price = 0
+
+    for pizza_name, quantity in orders.items():
+        cost = PIZZAS[pizza_name] * quantity
+        total_price += cost
+
+        print(f"{pizza_name:<16} {quantity:<10} {cost} UAH")
+
+    print("--------------------------------")
+    print(f"Total price: {total_price} UAH")
+    print("================================")
+
+
+def main():
+    orders = {}
+
+    while True:
+        show_menu()
+
+        choice = input("Choose an option: ")
+
+        if choice == "1":
+            add_pizza(orders)
+
+        elif choice == "2":
+            print("Thank you for your order!")
+            break
+
+        elif choice == "3":
+            show_order(orders)
+
+        else:
+            print("Invalid option! Please try again.")
+
+
+if __name__ == "__main__":
+    main()
