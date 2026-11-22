@@ -30,3 +30,4 @@ print("Загальна кількість днів:", b)
 
 unused_variable = 123
 abc = 0
+
