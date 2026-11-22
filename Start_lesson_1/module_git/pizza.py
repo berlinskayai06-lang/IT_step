@@ -100,3 +100,65 @@ while True:
 
     else:
         print("Invalid option! Please try again.")
+
+
+
+
+
+pizzas = {
+    "Margherita": 150,
+    "Pepperoni": 180,
+    "Four Cheese": 200,
+}
+
+orders = {}
+
+while True:
+    print("\n===== PIZZA MENU =====")
+    print("1. Order pizza")
+    print("2. Exit")
+    print("3. Show complete order")
+
+    choice = input("Choose an option: ")
+
+    if choice == "1":
+        print("\nAvailable pizzas:")
+
+        for name, price in pizzas.items():
+            print(f"{name} - {price} UAH")
+
+        pizza_name = input("Enter pizza name: ").strip()
+
+        if pizza_name not in pizzas:
+            print("Pizza not found! Please choose from the menu.")
+            continue
+
+        quantity = int(input("Enter quantity: "))
+
+        orders[pizza_name] = orders.get(pizza_name, 0) + quantity
+
+        print(f"Ordered {pizza_name}, {quantity} pcs")
+
+    elif choice == "2":
+        print("Thank you for your order!")
+        break
+
+    elif choice == "3":
+        print("\n========== YOUR ORDER ==========")
+        print(f"{'Pizza':<16} {'Quantity':<10} Cost")
+        print("--------------------------------")
+
+        total_price = 0
+
+        for pizza_name, quantity in orders.items():
+            cost = pizzas[pizza_name] * quantity
+            total_price += cost
+
+            print(f"{pizza_name:<16} {quantity:<10} {cost} UAH")
+
+        print("--------------------------------")
+        print(f"Total price: {total_price} UAH")
+        print("================================")
+
+    else:
+        print("Invalid option! Please try again.")
