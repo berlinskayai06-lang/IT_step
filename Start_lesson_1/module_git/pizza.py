@@ -61,3 +61,42 @@ while True:
 
     else:
         print("Invalid option! Please try again.")
+
+
+
+
+pizzas = {
+    "Margherita": 150,
+    "Pepperoni": 180,
+    "Four Cheese": 200,
+}
+
+while True:
+    print("\n===== PIZZA MENU =====")
+    print("1. Order pizza")
+    print("2. Exit")
+
+    choice = input("Choose an option: ")
+
+    if choice == "1":
+        print("\nAvailable pizzas:")
+
+        for name, price in pizzas.items():
+            print(f"{name} - {price} UAH")
+
+        pizza_name = input("Enter pizza name: ").strip()
+
+        if pizza_name not in pizzas:
+            print("Pizza not found! Please choose from the menu.")
+            continue
+
+        quantity = int(input("Enter quantity: "))
+
+        print(f"Ordered {pizza_name}, {quantity} pcs")
+
+    elif choice == "2":
+        print("Thank you for your order!")
+        break
+
+    else:
+        print("Invalid option! Please try again.")
